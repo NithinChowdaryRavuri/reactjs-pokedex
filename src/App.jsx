@@ -28,7 +28,7 @@ function App() {
   }, []);
 
   return (
-    <main className="flex flex-col redcol h-screen w-screen gap-4">
+    <main className="flex flex-col redcol items-center h-screen w-screen gap-4">
       <Header />
       {pokemons && <Main pokemons={pokemons} />}
       <Footer />

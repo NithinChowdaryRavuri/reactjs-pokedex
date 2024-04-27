@@ -9,3 +9,7 @@
 .redcol {
   background-color: #dc0a2d;
 }
+
+.wide {
+  width: calc(100% - 1rem);
+}
