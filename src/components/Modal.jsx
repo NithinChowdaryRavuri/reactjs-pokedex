@@ -20,7 +20,6 @@ export default function Modal(props) {
     dragon: "#7038F8",
     dark: "#705848",
     steel: "#B8B8D0",
-    dark: "#EE99AC",
   };
   const bg_col = typeColors[modalData.types[0].type.name];
 
