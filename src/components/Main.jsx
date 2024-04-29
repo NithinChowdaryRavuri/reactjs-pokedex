@@ -2,7 +2,7 @@ import React from "react";
 import PokeCard from "./PokeCard";
 
 export default function Main(props) {
-  const { pokemons } = props;
+  const { pokemons, backModal } = props;
   return (
     <section
       className="flex h-5/6 flex-1 flex-wrap items-center justify-center wide
@@ -10,7 +10,7 @@ export default function Main(props) {
     >
       {pokemons.map((pokemon, pokeIndex) => {
         return (
-          <PokeCard pokeIndex={pokeIndex} key={pokeIndex}>
+          <PokeCard pokeIndex={pokeIndex} key={pokeIndex} backModal={backModal}>
             {pokemon}
           </PokeCard>
         );
