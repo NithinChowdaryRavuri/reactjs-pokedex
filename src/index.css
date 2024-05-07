@@ -13,3 +13,19 @@
 .wide {
   width: calc(100% - 1rem);
 }
+
+.imgNoShow {
+  filter: brightness(0%);
+}
+
+.imgShow {
+  filter: brightness(100%);
+}
+
+.nameNoShow {
+  display: none;
+}
+
+.nameShow {
+  display: block;
+}
