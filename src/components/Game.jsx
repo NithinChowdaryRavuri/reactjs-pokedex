@@ -47,15 +47,13 @@ export default function Game(props) {
               onClick={() => handleOptionClick(option)}
               key={index}
               disabled={isOptionSelected}
-              className={`bg-transparent hover:bg-blue-500 text-blue-700 font-semibold 
-            hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded w-32 h-10 text-center 
-            ${
-              selectedOption === option
-                ? option === gameData.correctAnswer
-                  ? "bg-green-500 text-white border-green-500 hover:bg-green-500 hover:border-green-500"
-                  : "bg-red-500 text-white border-red-500 hover:bg-red-500 hover:border-red-500"
-                : ""
-            }`}
+              className={`${
+                isOptionSelected && selectedOption === option
+                  ? option === gameData.correctAnswer
+                    ? "bg-green-500 text-white border-green-500"
+                    : "bg-red-500 text-white border-red-500"
+                  : "bg-transparent hover:bg-blue-500 text-blue-700 font-semibold"
+              } py-2 px-4 border border-blue-500 hover:border-transparent rounded w-32 h-10 text-center hover:text-white`}
             >
               {option}
             </button>
