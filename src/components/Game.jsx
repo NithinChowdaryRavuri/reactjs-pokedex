@@ -15,7 +15,7 @@ export default function Game(props) {
   return (
     <main
       className="flex h-screen flex-1 flex-col items-center justify-center redcol
-    bg-white rounded-lg overflow-auto px-8 p-4 gap-4"
+    bg-white overflow-auto px-8 p-4 gap-4"
     >
       <header className="flex items-center p-5 text-white gap-8">
         <button onClick={toggleGame} className="text-2xl sm:text-3xl">
@@ -60,6 +60,12 @@ export default function Game(props) {
           ))}
         </div>
       </section>
+      <footer className="flex items-center justify-center p-4">
+        <p className="text-center text-white text-sm">
+          &copy; 2024 Nithin 💛. All rights reserved. Pokemon and Pokemon
+          character names are trademarks of Nintendo.
+        </p>
+      </footer>
     </main>
   );
 }
